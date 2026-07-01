@@ -1,0 +1,16 @@
+db:
+  image: "mysql:8.0"
+  port: 3306
+  password: "rootpassword"
+
+backend:
+  image: "k8s-backend"
+  tag: "v1"
+  replicas: 1
+  port: 5000
+
+frontend:
+  image: "k8s-frontend"
+  tag: "v1"
+  replicas: 1
+  port: 80
