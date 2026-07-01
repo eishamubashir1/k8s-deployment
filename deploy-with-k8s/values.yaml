@@ -1,6 +1,6 @@
 db:
-  image: "mysql:8.0"
-  port: 3306
+  image: "mongo:6.0"
+  port: 27017
   password: "rootpassword"
 
 backend:
